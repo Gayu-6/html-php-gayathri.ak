@@ -1,0 +1,33 @@
+INPUT:
+<?php
+// Set number of rows and columns
+$size = 3;
+
+// Print header row
+echo str_pad("", 5); // Empty top-left cell
+for ($col = 1; $col <= $size; $col++) {
+    echo str_pad($col, 6);
+}
+echo "\n";
+
+// Print division values
+for ($row = 1; $row <= $size; $row++) {
+    echo str_pad($row, 5); // Row header
+
+    for ($col = 1; $col <= $size; $col++) {
+        $result = $row / $col;
+        $formatted = number_format($result, 2); // Always show two decimal places
+        echo str_pad($formatted, 6);
+    }
+
+    echo "\n";
+}
+?>
+OUTPUT:
+1     2     3     
+1    1.00  0.50  0.33  
+2    2.00  1.00  0.67  
+3    3.00  1.50  1.00  
+
+
+=== Code Execution Successful ===
