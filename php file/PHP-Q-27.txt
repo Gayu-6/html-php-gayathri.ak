@@ -1,0 +1,16 @@
+INPUT:
+<?php
+$a = 10;
+$b = 3;
+
+echo "Addition (a + b): " . ($a + $b) . "<br>";        // 13
+echo "Subtraction (a - b): " . ($a - $b) . "<br>";     // 7
+echo "Multiplication (a * b): " . ($a * $b) . "<br>";  // 30
+echo "Division (a / b): " . ($a / $b) . "<br>";        // 3.333...
+echo "Modulus (a % b): " . ($a % $b) . "<br>";         // 1
+echo "Exponentiation (a ** b): " . ($a ** $b) . "<br>";// 1000
+?>
+OUTPUT:
+Addition (a + b): 13<br>Subtraction (a - b): 7<br>Multiplication (a * b): 30<br>Division (a / b): 3.3333333333333<br>Modulus (a % b): 1<br>Exponentiation (a ** b): 1000<br>
+
+=== Code Execution Successful ===
