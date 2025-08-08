@@ -1,0 +1,30 @@
+INPUT:
+<!DOCTYPE html>
+<html>
+<head>
+  <title>PHP Variable Output</title>
+</head>
+<body>
+
+  <h2>PHP Output with Variables</h2>
+
+  <?php
+  // Correct variable names
+  $var1 = "this";
+  $that = "that";
+  $the_other = 2.2000000000;
+
+  // Display each variable
+  echo "<p><strong>var1:</strong> $var1</p>";
+  echo "<p><strong>that:</strong> $that</p>";
+  echo "<p><strong>the_other:</strong> $the_other</p>";
+
+  // Display combined output (with undefined variable $not_set)
+  echo "<h3>Combined Output:</h3>";
+  echo "<p>";
+  echo "$var1," . @$not_set . ",$that+$the_other";
+  echo "</p>";
+  ?>
+
+</body>
+</html>
