@@ -1,0 +1,11 @@
+<?php
+// Original string
+$text = "The Thing will come to you soon";
+
+// Replace the first occurrence of 'the' (case-insensitive)
+$updated = preg_replace('/\bthe\b/i', 'best', $text, 1);
+
+// Display the result
+echo "<p><strong>Original:</strong> $text</p>";
+echo "<p><strong>Modified:</strong> $updated</p>";
+?>
